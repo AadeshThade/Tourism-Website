@@ -1,0 +1,141 @@
+
+
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    margin: 0; /* Remove default margin */
+}
+
+/* Input Styling */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 300px;
+    margin-bottom: 10px; /* Space between text input and submit button */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Carousel Styling */
+ngb-carousel {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.picsum-img-wrapper {
+    width: 95%;
+    height: 570px; /* Adjust based on your preference */
+    overflow: hidden;
+}
+
+.picsum-img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 40px 0;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* Header styling */
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Body row styling */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: #333;
+}
+
+/* Alternate row coloring */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #d1e7fd;
+}
+
+/* Responsive table */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    th, td {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    th, td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

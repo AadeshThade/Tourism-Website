@@ -1,0 +1,22 @@
+<div class="show">
+  <div class="container-fluid">
+    <section class="button-container">
+      <mat-card class="example-card" *ngFor="let i of hotels">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{i.name}}</mat-card-title>
+          <mat-card-subtitle style="color: black;">{{i.location}}</mat-card-subtitle>
+        </mat-card-header>
+        <img src="{{i.image}}" alt="Image" class="image-button" (click)="onImageClick()">
+        <mat-card-content>
+          <p>{{i.description}}</p>
+          <p><strong>Price:</strong> {{i.price | currency:'INR'}}</p>
+          <p><strong>Number of Members:</strong> {{i.members}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button class="click" (click)="onImageClick()">BOOK NOW</button>
+        </mat-card-actions>
+      </mat-card>
+    </section>
+  </div>
+</div>

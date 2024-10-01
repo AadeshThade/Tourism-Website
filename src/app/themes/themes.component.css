@@ -1,0 +1,52 @@
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #f7f8f9, #e4e5e6); /* Soft gradient background */
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 30%;
+}
+.logo {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: 700;
+    color: #ffffff; /* Text color */
+    background: url('https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Travel-logo-design-Graphics-9786083-1.jpg') no-repeat center center; /* Background image */
+    background-size: cover; /* Cover the entire container */
+    padding: 20px;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    border: 4px solid #ffffff; /* White border to contrast with the background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Enhanced text shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative; /* Position relative to control z-index */
+}
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+}
+.logo .emoji {
+    font-size: 3rem; /* Larger emoji */
+    margin: 10px 0; /* Space above and below the emoji */
+    z-index: 1; /* Ensure emoji is on top */
+}
+.logo .text {
+    font-family: 'Dancing Script', cursive; /* Elegant font */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1.2rem; /* Adjust text size for balance */
+    text-align: center; /* Center text alignment */
+    z-index: 1; /* Ensure text is on top */
+    color: Black; /* Light text color */
+    padding-top: 70px; /* Space above the text */
+}
+.logo .text span {
+    display: block; /* Display text lines as block */
+}

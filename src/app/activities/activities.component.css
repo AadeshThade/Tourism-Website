@@ -1,0 +1,54 @@
+.actlabel{
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration:underline;
+  font-weight:bolder;
+  
+}
+.actmain {
+  display:grid;
+  padding-top: 50px;
+  background: linear-gradient(to right, #c7a304, #e4e5e6);
+  padding-bottom: 50px;
+}
+
+button{
+  margin-left: 40px;
+  color: #000;
+}
+
+.activity{
+  margin-left: 97px;
+  margin-right: 27px;
+  /* padding-right: 40px; */
+/* background-color: #000911; */
+  margin-bottom: 50px;
+}
+.actimg{
+  align-items: center;
+  padding: auto;
+  margin-bottom: 5%;
+  width: 27%;
+  margin-left: 5%;
+  height: 300px;
+  border: 1px none black;
+  /* background-image: url('../../../public/para.jpg'); */
+  /* background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 30%;
+  background-position-x: 40%; */
+  float: left;
+  cursor:pointer;
+
+  /* border-radius: 5px; */
+
+}
+.actimg:hover {
+  /* border: 1px solid #000;  */
+  transform: scale(1.15); /* Slightly enlarge the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  
+
+  
+  

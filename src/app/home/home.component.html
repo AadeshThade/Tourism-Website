@@ -1,0 +1,18 @@
+<!-- Enter Product Code:<input type="text" [(ngModel)]="prodName"> -->
+
+@if (images) {
+<ngb-carousel [interval]="5000">
+  <ng-template ngbSlide *ngFor="let i of carosel">
+    <div class="picsum-img-wrapper">
+      <img src="{{i.image}}" alt="Random first slide" />
+    </div>
+    <div class="carousel-caption">
+      <h3>{{i.title}}</h3>
+      <p>{{i.description}}</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+}
+
+
+

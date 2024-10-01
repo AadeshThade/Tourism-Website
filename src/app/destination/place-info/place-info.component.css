@@ -1,0 +1,146 @@
+
+.images {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    padding-top: 20%;
+    padding-left: 10px;
+    color: azure; /* A deep blue-gray color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for depth */
+    letter-spacing: 1px; /* Adds space between letters */
+    line-height: 1.5; /* Improves readability */
+    text-transform: uppercase; /* Makes the text all uppercase for emphasis */
+    font-weight: bold; /* Makes the text bold */
+ }
+ 
+
+.main{
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    width: 100%;
+}
+.example-cards {
+    
+    background-image: url('../../../../public/kerela.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width:100%;
+  }
+  
+  
+
+  .show {
+    display: table;
+    padding-top: 50px;
+    padding-left: 70px;
+    padding-right: 70px;
+    /* background-color: black; */
+    padding-bottom: 50px;
+    background: linear-gradient(to right, #c7a304, #e4e5e6);
+  }
+    .container-fluid {
+      width: 100%;
+      padding: 0 15px; /* Adds some padding on the sides */
+      margin: 0 auto;
+    }
+    .example-header-image {
+      background-image: url('../../../../public/travel.jpg');
+      background-size: cover;
+    }
+    .button-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Responsive columns */
+      gap: 50px; /* Gap between the cards */
+      color: aliceblue;
+    }
+    
+    .example-card {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .image-button {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    }
+    
+    .image-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .example-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .click{
+      width: 100%;
+      padding: 10px;
+      background-color: #3f51b5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .actlabel{
+      font-family: 'Times New Roman', Times, serif;
+      text-decoration:underline;
+      font-weight:bolder;
+      color: black;
+      
+    }
+    .actmain {
+      display:grid;
+      padding-top: 50px;
+      background: linear-gradient(to right, #c7a304, #e4e5e6);
+      padding-bottom: 50px;
+    }
+    
+    /* button{
+      margin-left: 40px;
+      color: #000;
+    } */
+    
+    .activity{
+      margin-left: 97px;
+      margin-right: 27px;
+      /* padding-right: 40px; */
+    /* background-color: #000911; */
+      margin-bottom: 50px;
+    }
+    .actimg{
+      align-items: center;
+      padding: auto;
+      margin-bottom: 5%;
+      width: 27%;
+      margin-left: 5%;
+      height: 300px;
+      border: 1px none black;
+      /* background-image: url('../../../public/para.jpg'); */
+      /* background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 30%;
+      background-position-x: 40%; */
+      float: left;
+      cursor:pointer;
+    background-color: #e4e5e6;
+      border-radius: 5px;
+    
+    }
+    .actimg:hover {
+      /* border: 1px solid #000;  */
+      transform: scale(1.15); /* Slightly enlarge the image */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+      
+    
+      
+      

@@ -1,0 +1,38 @@
+<div class="registration-container">
+    <div class="registration-box">
+        <h2>Register</h2>
+
+            <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+            <div class="input-group">
+                <input type="text" formControlName="firstname" placeholder="First Name" required>
+                <input type="text" formControlName="lastname" placeholder="last Name" required>
+            </div>
+            <!-- <div class="gender-selection">
+                <label>Gender 
+                  <input type="radio" formControlName="gender" value="male"> Male
+                </label>
+                <label>
+                  <input type="radio" formControlName="gender" value="female"> Female
+                </label>
+              </div> -->
+               
+            <div class="input-group">
+              <input type="date" formControlName="dob" placeholder="Date of Birth" required>
+                <input type="email" formControlName="emailId" placeholder="Email" required>
+              
+            </div>
+            <div class="input-group">
+                <input type="text" formControlName="mobNo" placeholder="Mobile Number" required>
+                <textarea cols="37" rows="2" formControlName="address" placeholder="Address" required></textarea>
+            </div>
+            <div class="input-group">
+                <input type="text" formControlName="loginId" placeholder="Login Id" required>
+                <input type="password" formControlName="pass" placeholder="Password" required>
+            </div>
+            <button type="submit" class="register-button">Register</button>
+        </form>
+        <div class="login-link">
+            <a href="#">Already have an account? Login</a>
+        </div>
+    </div>
+</div>

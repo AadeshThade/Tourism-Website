@@ -1,0 +1,8 @@
+<div class="actmain">
+    <div class="activity">
+      <button mat-button (click)="onImageClick()" class="actimg" *ngFor="let i of activities"> 
+         <p class="actlabel"> {{i.activity}}</p>
+         <img src="{{i.image}}" width="355px" height="250px">
+         </button> 
+   </div>
+</div>

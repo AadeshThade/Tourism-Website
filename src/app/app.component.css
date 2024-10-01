@@ -1,0 +1,23 @@
+.main{
+    background: linear-gradient(to right, #c7a304, #e4e5e6);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+}
+footer {
+    /* background-color: #333; */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+} */

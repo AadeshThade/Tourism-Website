@@ -1,0 +1,72 @@
+<br>
+<br>
+<body>
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h1>Checkout</h1>
+            <!-- <form class="checkout-form" action="#" method="post">
+                <section class="section customer-details">
+                    <h2>Customer Details</h2>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name" required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Email Id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+91" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Address" required>
+						<label for="amount">Total Amount</label>
+						<input type="number" id="amount" amount="amount" value="Rs">
+                    </div>
+                    
+                </section>
+                <button type="submit" (click)="payNow()" class="submit-btn">Proceed Payment</button>
+            </form> -->
+
+            <form [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+                <div class="input-group">
+                    <input type="text" formControlName="fullName" placeholder="Full Name" required>
+                    <input type="email" formControlName="emailId" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="text" formControlName="mobNo" placeholder="Mobile Number" required>
+                    <textarea cols="42" rows="2" formControlName="addr" placeholder="Address" required></textarea>
+                </div>
+                <div class="input-group">
+                    <input type="text" formControlName="totalAmt" placeholder="Total Amount" readonly>
+                </div>
+                <div class="input-groups">
+                    <div class="input-group">
+                        <label for="fromDate">From Date:</label>
+                        <input type="date" id="fromDate" formControlName="fromDate" placeholder="From Date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="toDate">To Date:</label>
+                        <input type="date" id="toDate" formControlName="toDate" placeholder="To Date" required>
+                    </div>
+                </div>
+                
+                <div class="input-groups">
+                    <!-- <label for="cardNumber">Card Number</label><br> -->
+                    <div class="input-group">
+                    <input type="text" id="cardNumber" formControlName="cardNumber" placeholder="Card Number" required></div>
+                    <div class="input-group">
+                    <label for="toDate">Expiry Date:</label>
+                    <input type="date" id="expiryDate" formControlName="expiryDate" placeholder="Card Expiry Date" required></div>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="cvv" formControlName="cvv" placeholder="CVV" required>
+                    <input type="text" id="nameonCard" formControlName="nameonCard" placeholder="Name on Card" required>
+                </div>
+                <button type="submit" class="register-button">Proceed</button>
+            </form>
+        </div>
+    </div>
+</body>
