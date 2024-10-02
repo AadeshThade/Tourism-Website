@@ -1,6 +1,29 @@
-# Tourism
+# Tourism Frontend Project by Aadesh Thade.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.2.
+This is the frontend application for a tourism management system built using **AngularJS**. The application provides a user-friendly interface for managing destinations, activities, hotels, and payments, along with user authentication.
+
+## Features
+
+- **User Authentication**: Secure user registration and login.
+- **Destination Management**: View and manage tourist destinations.
+- **Activity Management**: Browse and manage various activities associated with each destination.
+- **Hotel Management**: Access hotel listings, including details and availability.
+- **Payment Processing**: Facilitate payments for bookings and transactions.
+
+## Technologies Used
+
+- **HTML/CSS**: For structuring and styling the web application.
+- **AngularJS**: Framework for building dynamic single-page applications (SPAs).
+- **Bootstrap**: For responsive design and UI components.
+- **REST API**: Communicates with the backend services to fetch and manage data.
+
+## Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/tourism-frontend.git
+
 
 ## Development server
 
